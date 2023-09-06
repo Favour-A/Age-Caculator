@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Merriweather:ital@0;1&family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./index.css">
+    <title>Age-Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="age-calculator">
+            <form action="#" class="form">
+                <div>
+                    <label for day>DAY</label>
+                    <br>
+                    <input type="number" name="day" id="day" min="1" max="31" placeholder="21" required>
+                </div>
+                <div>
+                    <label for month>MONTH</label>
+                    <br>
+                    <input type="number" name="month" id="month" min="1" max="12" placeholder="12" required>
+                </div>
+                <div>
+                    <label for year>YEAR</label>
+                    <br>
+                    <input type="number" name="year" id="year" min="1900" max="2022" placeholder="1999" required>
+                </div>
+            </form>
+            <hr class="hr">
+
+            <div class="second">
+               
+                <button class="btn" onclick="calculateAge()">Go</button>
+
+            </div>
+            <div class="result-container">
+                <div class="result">
+                    <h1 class="years"><span id="year">--</span> years</h1>
+                    <h1 class="months"><span id="month">--</span> months</h1>
+                    <h1 class="days"><span id="day">--</span> days</h1>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

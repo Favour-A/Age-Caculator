@@ -1,0 +1,92 @@
+html {
+    font-size: 26px;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    
+    padding: 3px;
+    background-color: hsl(0, 1%, 44%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 86%);
+    margin: 2rem;
+    border: 1px solid  hsl(0, 0%, 86%);
+    
+}
+
+.age-calculator {
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 0%, 94%);
+    padding: 3rem;
+    border-radius: 5px;
+    margin: 4rem;
+    overflow: hidden;
+}
+
+.form {
+    display: flex;
+
+}
+.form div {
+    flex: 1;
+    flex-flow: row;
+}
+.form div label {
+    font-size: 12px;
+
+}
+
+.second {
+    display: flex;
+}
+.second button {
+    flex: end;
+    color: hsl(259, 100%, 65%);
+    
+}
+ .hr {
+    flex: start;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+.result {
+    display: block;
+}
+.result .years {
+    flex: 1;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 800i;
+
+}
+.result .months {
+    flex: 1;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 800i;
+
+}
+.result .days {
+    flex: 1;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 800i;
+
+}
+span {
+    color: hsl(259, 100%, 65%);
+    flex: right;
+
+}
