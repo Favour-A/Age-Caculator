@@ -16,36 +16,39 @@
                 <div>
                     <label for day>DAY</label>
                     <br>
-                    <input type="number" name="day" id="day" min="1" max="31" placeholder="21" required>
+                    <input type="number" name="day" id="day" min="1" max="31" required>
                 </div>
                 <div>
                     <label for month>MONTH</label>
                     <br>
-                    <input type="number" name="month" id="month" min="1" max="12" placeholder="12" required>
+                    <input type="number" name="month" id="month" min="1" max="12"  required>
                 </div>
                 <div>
                     <label for year>YEAR</label>
                     <br>
-                    <input type="number" name="year" id="year" min="1900" max="2022" placeholder="1999" required>
+                    <input type="number" name="year" id="year" min="1900" max="2022"  required>
+                    
                 </div>
             </form>
+            <p id="error"></p>
             <hr class="hr">
 
             <div class="second">
                
-                <button class="btn" onclick="calculateAge()">Go</button>
+                <button class="btn" id="go_button">Go</button>
 
             </div>
             <div class="result-container">
                 <div class="result">
-                    <h1 class="years"><span id="year">--</span> years</h1>
-                    <h1 class="months"><span id="month">--</span> months</h1>
-                    <h1 class="days"><span id="day">--</span> days</h1>
+                    <h1 class="years"><span id="year_display">--</span> years</h1>
+                    <h1 class="months"><span id="month_display">--</span> months</h1>
+                    <h1 class="days"><span id="day_display">--</span> days</h1>
             </div>
             </div>
 
         </div>
     </div>
+    <script src="./index.js"></script>
     
 </body>
 </html>

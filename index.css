@@ -42,14 +42,54 @@ body {
     font-size: 12px;
 
 }
+ /*this will make the input box turn red when the user enters a wrong input*/
+.form div input:invalid {
+    border: 1px solid red;}
+
+
+.form input {
+    font-weight: 600;
+    font-size: 16px;
+
+  }
+
+input[type= number]::-webkit-inner-spin-button, input[type= number]::-webkit-outer-spin-button {
+    margin: 0;
+    display: none;
+    
+}
+  
+#error {
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+
+}
 
 .second {
-    display: flex;
-}
-.second button {
-    flex: end;
+    float: right;
+    justify-content: right;
+    text-align: right;
     color: hsl(259, 100%, 65%);
+    padding-top: -20px;
     
+} 
+
+/*trying to make the button move up a lttle bit*/
+#go_button {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(259, 100%, 65%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 800;
+    border: 1px solid hsl(259, 100%, 65%);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
  .hr {
     flex: start;
@@ -63,7 +103,7 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 800i;
 
 }
@@ -72,7 +112,7 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 800i;
 
 }
@@ -81,7 +121,7 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 800i;
 
 }
